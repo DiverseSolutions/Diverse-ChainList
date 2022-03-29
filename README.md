@@ -1,6 +1,6 @@
 ### Diverse Chainlist 🌟✨
 ---
-API endpoint to retrieve JSON formatted chainlists of evm compatible <br/> blockchain networks we know 🔥🥳
+API endpoint to retrieve JSON formatted chainlists of evm compatible blockchain networks we know 🔥🥳
 
 <br/>
 
