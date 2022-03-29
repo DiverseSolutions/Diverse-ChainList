@@ -11,14 +11,12 @@ set shortmess=aoO
 badd +6 postcss.config.js
 badd +17 styles/globals.css
 badd +2 tailwind.config.js
-badd +23 pages/index.js
-badd +11 pages/_app.js
-badd +0 README.md
+badd +165 pages/api/chainlist.js
+badd +10 README.md
 argglobal
 %argdel
+edit README.md
 argglobal
-enew
-file NERD_tree_1
 setlocal fdm=manual
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -26,7 +24,15 @@ setlocal fdi=#
 setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
-setlocal nofen
+setlocal fen
+silent! normal! zE
+let &fdl = &fdl
+let s:l = 6 - ((5 * winheight(0) + 19) / 38)
+if s:l < 1 | let s:l = 1 | endif
+keepjumps exe s:l
+normal! zt
+keepjumps 6
+normal! 011|
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0&& getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf
