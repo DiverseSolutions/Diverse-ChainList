@@ -13,11 +13,12 @@ badd +17 styles/globals.css
 badd +2 tailwind.config.js
 badd +23 pages/index.js
 badd +11 pages/_app.js
+badd +0 README.md
 argglobal
 %argdel
-edit pages/index.js
 argglobal
-balt pages/_app.js
+enew
+file NERD_tree_1
 setlocal fdm=manual
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -25,15 +26,7 @@ setlocal fdi=#
 setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
-setlocal fen
-silent! normal! zE
-let &fdl = &fdl
-let s:l = 23 - ((22 * winheight(0) + 19) / 38)
-if s:l < 1 | let s:l = 1 | endif
-keepjumps exe s:l
-normal! zt
-keepjumps 23
-normal! 038|
+setlocal nofen
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0&& getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf
