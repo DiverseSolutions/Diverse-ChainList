@@ -53,7 +53,10 @@ export default function handler(req, res) {
       name: [ 'Goerli' ,'Goerli Testnet' ],
       chainId: 5,
       rpc: [],
-      faucets: [ 'https://goerli-faucet.slock.it' ],
+      faucets: [ 
+        'https://goerli-faucet.slock.it',
+        'https://goerlifaucet.com'
+      ],
       currency: 'ETH',
       explorers: [ 'https://goerli.etherscan.io' ],
       logos: [ 'https://cryptologos.cc/logos/ethereum-eth-logo.png?v=022' ]

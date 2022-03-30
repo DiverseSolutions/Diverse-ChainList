@@ -3,7 +3,7 @@ let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-
 let v:this_session=expand("<sfile>:p")
 silent only
 silent tabonly
-cd ~/Projects/Blockchain/diverse-smartcontract/diverse-chainlist
+cd ~/Projects/Blockchain/diverse-blockchain-github/diverse-chainlist
 if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
@@ -11,12 +11,13 @@ set shortmess=aoO
 badd +6 postcss.config.js
 badd +17 styles/globals.css
 badd +2 tailwind.config.js
-badd +165 pages/api/chainlist.js
-badd +10 README.md
+badd +62 pages/api/chainlist.js
+badd +6 README.md
 argglobal
 %argdel
-edit README.md
+edit pages/api/chainlist.js
 argglobal
+balt README.md
 setlocal fdm=manual
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -27,12 +28,12 @@ setlocal fdn=20
 setlocal fen
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 6 - ((5 * winheight(0) + 19) / 38)
+let s:l = 62 - ((18 * winheight(0) + 19) / 38)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 6
-normal! 011|
+keepjumps 62
+normal! 05|
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0&& getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf
