@@ -1,4 +1,24 @@
-export default function handler(req, res) {
+import Cors from 'cors'
+
+const cors = Cors({
+  methods: ['GET', 'HEAD'],
+})
+
+function runMiddleware(req, res, fn) {
+  return new Promise((resolve, reject) => {
+    fn(req, res, (result) => {
+      if (result instanceof Error) {
+        return reject(result)
+      }
+
+      return resolve(result)
+    })
+  })
+}
+
+async function handler(req, res) {
+  await runMiddleware(req, res, cors)
+
   const chainlist = [
     // Ethereum
     {
@@ -54,8 +74,7 @@ export default function handler(req, res) {
       chainId: 5,
       rpc: [],
       faucets: [ 
-        'https://goerli-faucet.slock.it',
-        'https://goerlifaucet.com'
+        'https://goerli-faucet.slock.it'
       ],
       currency: 'ETH',
       explorers: [ 'https://goerli.etherscan.io' ],
@@ -102,7 +121,7 @@ export default function handler(req, res) {
     },
     {
       name: [ 'Mumbai' ,'Mumbai Testnet' ],
-      chainId: 80001,
+      ehainId: 80001,
       rpc: [
         'https://matic-mumbai.chainstacklabs.com',
         'https://rpc-mumbai.maticvigil.com',
@@ -173,3 +192,4 @@ export default function handler(req, res) {
   res.status(200).json(chainlist)
 }
 
+export default handler;

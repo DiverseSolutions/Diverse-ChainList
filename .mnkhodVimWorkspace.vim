@@ -8,11 +8,6 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +6 postcss.config.js
-badd +17 styles/globals.css
-badd +2 tailwind.config.js
-badd +62 pages/api/chainlist.js
-badd +6 README.md
 argglobal
 %argdel
 edit pages/api/chainlist.js
@@ -28,14 +23,19 @@ setlocal fdn=20
 setlocal fen
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 62 - ((18 * winheight(0) + 19) / 38)
+let s:l = 1 - ((0 * winheight(0) + 19) / 38)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 62
-normal! 05|
+keepjumps 1
+normal! 0
 tabnext 1
-if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0&& getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
+badd +6 postcss.config.js
+badd +17 styles/globals.css
+badd +2 tailwind.config.js
+badd +6 README.md
+badd +0 pages/api/chainlist.js
+if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0 && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf
 endif
 unlet! s:wipebuf

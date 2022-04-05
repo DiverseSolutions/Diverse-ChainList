@@ -34,6 +34,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["autoprefixer", "virtual:8ebf39e04810e2e7965fac162de952a358b0ff063f03f993ec84d89894ffd2f766209f810f36fd4cf1c49b981823b4869855ec24a9d56a9ccfcde9d00c322b9b#npm:10.4.4"],\
+            ["cors", "npm:2.8.5"],\
             ["daisyui", "virtual:8ebf39e04810e2e7965fac162de952a358b0ff063f03f993ec84d89894ffd2f766209f810f36fd4cf1c49b981823b4869855ec24a9d56a9ccfcde9d00c322b9b#npm:2.13.4"],\
             ["eslint", "npm:8.12.0"],\
             ["eslint-config-next", "virtual:8ebf39e04810e2e7965fac162de952a358b0ff063f03f993ec84d89894ffd2f766209f810f36fd4cf1c49b981823b4869855ec24a9d56a9ccfcde9d00c322b9b#npm:12.1.2"],\
@@ -1021,6 +1022,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["cors", [\
+        ["npm:2.8.5", {\
+          "packageLocation": "./.yarn/cache/cors-npm-2.8.5-c9935a2d12-ced838404c.zip/node_modules/cors/",\
+          "packageDependencies": [\
+            ["cors", "npm:2.8.5"],\
+            ["object-assign", "npm:4.1.1"],\
+            ["vary", "npm:1.1.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["cosmiconfig", [\
         ["npm:7.0.1", {\
           "packageLocation": "./.yarn/cache/cosmiconfig-npm-7.0.1-dd19ae2403-4be63e7117.zip/node_modules/cosmiconfig/",\
@@ -1254,6 +1266,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["diverse-chainlist", "workspace:."],\
             ["autoprefixer", "virtual:8ebf39e04810e2e7965fac162de952a358b0ff063f03f993ec84d89894ffd2f766209f810f36fd4cf1c49b981823b4869855ec24a9d56a9ccfcde9d00c322b9b#npm:10.4.4"],\
+            ["cors", "npm:2.8.5"],\
             ["daisyui", "virtual:8ebf39e04810e2e7965fac162de952a358b0ff063f03f993ec84d89894ffd2f766209f810f36fd4cf1c49b981823b4869855ec24a9d56a9ccfcde9d00c322b9b#npm:2.13.4"],\
             ["eslint", "npm:8.12.0"],\
             ["eslint-config-next", "virtual:8ebf39e04810e2e7965fac162de952a358b0ff063f03f993ec84d89894ffd2f766209f810f36fd4cf1c49b981823b4869855ec24a9d56a9ccfcde9d00c322b9b#npm:12.1.2"],\
@@ -4133,6 +4146,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/v8-compile-cache-npm-2.3.0-961375f150-adb0a271ea.zip/node_modules/v8-compile-cache/",\
           "packageDependencies": [\
             ["v8-compile-cache", "npm:2.3.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["vary", [\
+        ["npm:1.1.2", {\
+          "packageLocation": "./.yarn/cache/vary-npm-1.1.2-b49f70ae63-ae0123222c.zip/node_modules/vary/",\
+          "packageDependencies": [\
+            ["vary", "npm:1.1.2"]\
           ],\
           "linkType": "HARD"\
         }]\
