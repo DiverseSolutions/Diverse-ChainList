@@ -121,7 +121,7 @@ async function handler(req, res) {
     },
     {
       name: [ 'Mumbai' ,'Mumbai Testnet' ],
-      ehainId: 80001,
+      chainId: 80001,
       rpc: [
         'https://matic-mumbai.chainstacklabs.com',
         'https://rpc-mumbai.maticvigil.com',
