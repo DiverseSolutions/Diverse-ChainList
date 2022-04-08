@@ -18,6 +18,8 @@ API endpoint to retrieve JSON formatted chainlists of evm compatible blockchain 
  - Fuji Testnet
  - Fantom Opera
  - Fantom Testnet
+ - Corex
+ - Corex Testnet
 
 <br/>
 
