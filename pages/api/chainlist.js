@@ -186,6 +186,32 @@ async function handler(req, res) {
       logos: [ 'https://cryptologos.cc/logos/fantom-ftm-logo.png?v=022' ]
     },
 
+    // Corex
+    {
+      name: ['Corex', 'Corex Mainnet' ],
+      chainId: 1104,
+      rpc: [
+        'https://node.corexchain.io'
+      ],
+      faucets: [],
+      currency: 'CRX',
+      explorers: [ 'https://explorer.corexchain.io' ],
+      logos: [ 'https://storage.googleapis.com/i06di2x5g7ox05l3e-i06di2x5g7ox/crx-logo.png' ]
+    },
+    {
+      name: ['Corex Testnet' ],
+      chainId: 3305,
+      rpc: [
+        'https://node-testnet.corexchain.io'
+      ],
+      faucets: [
+        'https://faucet.corexchain.io/'
+      ],
+      currency: 'CRX',
+      explorers: [ 'https://explorer-testnet.corexchain.io' ],
+      logos: [ 'https://storage.googleapis.com/i06di2x5g7ox05l3e-i06di2x5g7ox/crx-logo.png' ]
+    },
+
   ];
 
 
