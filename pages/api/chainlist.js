@@ -129,7 +129,16 @@ async function handler(req, res) {
       faucets: [],
       currency: 'MATIC',
       explorers: [ 'https://polygonscan.com' ],
-      logos: [ 'https://cryptologos.cc/logos/polygon-matic-logo.png?v=022' ]
+      logos: [ 'https://cryptologos.cc/logos/polygon-matic-logo.png?v=022' ],
+      addChainLink: `https://metamask.dsolutions.mn/add-chain?`+
+      `chainId=${137}&`+
+      `chainName=${'Polygon'}&`+
+      `rpcUrl=${'https://polygon-rpc.com'}&`+
+      `blockExplorerUrl=${'https://polygonscan.com'}&`+
+      `iconUrl=${'https://cryptologos.cc/logos/polygon-matic-logo.png?v=022'}&`+
+      `currencyName=${'Matic'}&`+
+      `currencySymbol=${'MATIC'}&`+
+      `currencyDecimals=${18}`,
     },
     {
       name: [ 'Mumbai' ,'Mumbai Testnet' ],
@@ -143,7 +152,16 @@ async function handler(req, res) {
       ],
       currency: 'MATIC',
       explorers: [ 'https://mumbai.polygonscan.com' ],
-      logos: [ 'https://cryptologos.cc/logos/polygon-matic-logo.png?v=022' ]
+      logos: [ 'https://cryptologos.cc/logos/polygon-matic-logo.png?v=022' ],
+      addChainLink: `https://metamask.dsolutions.mn/add-chain?`+
+      `chainId=${80001}&`+
+      `chainName=${'Mumbai Testnet'}&`+
+      `rpcUrl=${'https://matic-mumbai.chainstacklabs.com'}&`+
+      `blockExplorerUrl=${'https://mumbai.polygonscan.com'}&`+
+      `iconUrl=${'https://cryptologos.cc/logos/polygon-matic-logo.png?v=022'}&`+
+      `currencyName=${'Matic'}&`+
+      `currencySymbol=${'MATIC'}&`+
+      `currencyDecimals=${18}`,
     },
 
     // Avalanche
@@ -156,7 +174,16 @@ async function handler(req, res) {
       faucets: [],
       currency: 'AVAX',
       explorers: [ 'https://snowtrace.io' ],
-      logos: [ 'https://cryptologos.cc/logos/avalanche-avax-logo.png?v=022' ]
+      logos: [ 'https://cryptologos.cc/logos/avalanche-avax-logo.png?v=022' ],
+      addChainLink: `https://metamask.dsolutions.mn/add-chain?`+
+      `chainId=${43114}&`+
+      `chainName=${'Avalanche'}&`+
+      `rpcUrl=${'https://api.avax.network/ext/bc/C/rpc'}&`+
+      `blockExplorerUrl=${'https://snowtrace.io'}&`+
+      `iconUrl=${'https://cryptologos.cc/logos/avalanche-avax-logo.png?v=022'}&`+
+      `currencyName=${'Avalanche'}&`+
+      `currencySymbol=${'AVAX'}&`+
+      `currencyDecimals=${18}`,
     },
     {
       name: [ 'Fuji', 'Avalanche Testnet', 'Fuji Testnet' ],
@@ -169,7 +196,16 @@ async function handler(req, res) {
       ],
       currency: 'AVAX',
       explorers: [ 'https://testnet.snowtrace.io' ],
-      logos: [ 'https://cryptologos.cc/logos/avalanche-avax-logo.png?v=022' ]
+      logos: [ 'https://cryptologos.cc/logos/avalanche-avax-logo.png?v=022' ],
+      addChainLink: `https://metamask.dsolutions.mn/add-chain?`+
+      `chainId=${43113}&`+
+      `chainName=${'Avalanche'}&`+
+      `rpcUrl=${'https://api.avax-test.network/ext/bc/C/rpc'}&`+
+      `blockExplorerUrl=${'https://testnet.snowtrace.io'}&`+
+      `iconUrl=${'https://cryptologos.cc/logos/avalanche-avax-logo.png?v=022'}&`+
+      `currencyName=${'Avalanche'}&`+
+      `currencySymbol=${'AVAX'}&`+
+      `currencyDecimals=${18}`,
     },
 
     // Fantom
@@ -182,7 +218,16 @@ async function handler(req, res) {
       faucets: [],
       currency: 'FTM',
       explorers: [ 'https://ftmscan.com/' ],
-      logos: [ 'https://cryptologos.cc/logos/fantom-ftm-logo.png?v=022' ]
+      logos: [ 'https://cryptologos.cc/logos/fantom-ftm-logo.png?v=022' ],
+      addChainLink: `https://metamask.dsolutions.mn/add-chain?`+
+      `chainId=${250}&`+
+      `chainName=${'Fantom Opera'}&`+
+      `rpcUrl=${'https://rpcapi.fantom.network/'}&`+
+      `blockExplorerUrl=${'https://ftmscan.com/'}&`+
+      `iconUrl=${'https://cryptologos.cc/logos/fantom-ftm-logo.png?v=022'}&`+
+      `currencyName=${'Fantom'}&`+
+      `currencySymbol=${'FTM'}&`+
+      `currencyDecimals=${18}`,
     },
     {
       name: ['Fantom Testnet' ],
@@ -195,7 +240,16 @@ async function handler(req, res) {
       ],
       currency: 'FTM',
       explorers: [ 'https://testnet.ftmscan.com/' ],
-      logos: [ 'https://cryptologos.cc/logos/fantom-ftm-logo.png?v=022' ]
+      logos: [ 'https://cryptologos.cc/logos/fantom-ftm-logo.png?v=022' ],
+      addChainLink: `https://metamask.dsolutions.mn/add-chain?`+
+      `chainId=${4002}&`+
+      `chainName=${'Fantom Testnet'}&`+
+      `rpcUrl=${'https://rpc.testnet.fantom.network'}&`+
+      `blockExplorerUrl=${'https://testnet.ftmscan.com/'}&`+
+      `iconUrl=${'https://cryptologos.cc/logos/fantom-ftm-logo.png?v=022'}&`+
+      `currencyName=${'Fantom'}&`+
+      `currencySymbol=${'FTM'}&`+
+      `currencyDecimals=${18}`,
     },
 
     // Corex
@@ -208,7 +262,16 @@ async function handler(req, res) {
       faucets: [],
       currency: 'CRX',
       explorers: [ 'https://explorer.corexchain.io' ],
-      logos: [ 'https://storage.googleapis.com/i06di2x5g7ox05l3e-i06di2x5g7ox/crx-logo.png' ]
+      logos: [ 'https://storage.googleapis.com/i06di2x5g7ox05l3e-i06di2x5g7ox/crx-logo.png' ],
+      addChainLink: `https://metamask.dsolutions.mn/add-chain?`+
+      `chainId=${1104}&`+
+      `chainName=${'Corex'}&`+
+      `rpcUrl=${'https://node.corexchain.io'}&`+
+      `blockExplorerUrl=${'https://explorer.corexchain.io'}&`+
+      `iconUrl=${'https://storage.googleapis.com/i06di2x5g7ox05l3e-i06di2x5g7ox/crx-logo.png'}&`+
+      `currencyName=${'Corex'}&`+
+      `currencySymbol=${'CRX'}&`+
+      `currencyDecimals=${18}`,
     },
     {
       name: ['Corex Testnet' ],
@@ -221,7 +284,16 @@ async function handler(req, res) {
       ],
       currency: 'CRX',
       explorers: [ 'https://explorer-testnet.corexchain.io' ],
-      logos: [ 'https://storage.googleapis.com/i06di2x5g7ox05l3e-i06di2x5g7ox/crx-logo.png' ]
+      logos: [ 'https://storage.googleapis.com/i06di2x5g7ox05l3e-i06di2x5g7ox/crx-logo.png' ],
+      addChainLink: `https://metamask.dsolutions.mn/add-chain?`+
+      `chainId=${3305}&`+
+      `chainName=${'Corex Testnet'}&`+
+      `rpcUrl=${'https://node-testnet.corexchain.io'}&`+
+      `blockExplorerUrl=${'https://explorer-testnet.corexchain.io'}&`+
+      `iconUrl=${'https://storage.googleapis.com/i06di2x5g7ox05l3e-i06di2x5g7ox/crx-logo.png'}&`+
+      `currencyName=${'Corex'}&`+
+      `currencySymbol=${'CRX'}&`+
+      `currencyDecimals=${18}`,
     },
 
   ];
