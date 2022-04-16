@@ -102,7 +102,7 @@ async function handler(req, res) {
       currency: 'BNB',
       explorers: [ 'https://bscscan.com' ],
       logos: [ 'https://cryptologos.cc/logos/bnb-bnb-logo.png?v=022' ],
-      addChainLink: `https://metamask.dsolutions.mn/add-chain?chainId=${56}&chainName=${'Binance Smart Chain'}&rpcUrl=${'https://bsc-dataseed1.ninicoin.io'}&blockExplorerUrl=${'https://bscscan.com'}&iconUrl=${'https://cryptologos.cc/logos/bnb-bnb-logo.png?v=022'}&currencyName=${'Binance'}&currencySymbol=${'BNB'}&currencyDecimals=${18}`,
+      addChainLink: `https://metamask.dsolutions.mn/add-chain?chainId=${56}&chainName=${'Binance%20Smart%20Chain'}&rpcUrl=${'https://bsc-dataseed1.ninicoin.io'}&blockExplorerUrl=${'https://bscscan.com'}&iconUrl=${'https://cryptologos.cc/logos/bnb-bnb-logo.png?v=022'}&currencyName=${'Binance'}&currencySymbol=${'BNB'}&currencyDecimals=${18}`,
     },
     {
       name: [ 'Binance Smart Chain Testnet' ,'BSC Testnet' ],
@@ -116,7 +116,7 @@ async function handler(req, res) {
       currency: 'BNB',
       explorers: [ 'https://testnet.bscscan.com/' ],
       logos: [ 'https://cryptologos.cc/logos/bnb-bnb-logo.png?v=022' ],
-      addChainLink: `https://metamask.dsolutions.mn/add-chain?chainId=${97}&chainName=${'Binance Smart Chain Testnet'}&rpcUrl=${'https://data-seed-prebsc-1-s1.binance.org:8545'}&blockExplorerUrl=${'https://testnet.bscscan.com/'}&iconUrl=${'https://cryptologos.cc/logos/bnb-bnb-logo.png?v=022'}&currencyName=${'Binance'}&currencySymbol=${'BNB'}&currencyDecimals=${18}`,
+      addChainLink: `https://metamask.dsolutions.mn/add-chain?chainId=${97}&chainName=${'Binance%20Smart%20Chain%20Testnet'}&rpcUrl=${'https://data-seed-prebsc-1-s1.binance.org:8545'}&blockExplorerUrl=${'https://testnet.bscscan.com/'}&iconUrl=${'https://cryptologos.cc/logos/bnb-bnb-logo.png?v=022'}&currencyName=${'Binance'}&currencySymbol=${'BNB'}&currencyDecimals=${18}`,
     },
 
     // Polygon
@@ -155,7 +155,7 @@ async function handler(req, res) {
       logos: [ 'https://cryptologos.cc/logos/polygon-matic-logo.png?v=022' ],
       addChainLink: `https://metamask.dsolutions.mn/add-chain?`+
       `chainId=${80001}&`+
-      `chainName=${'Mumbai Testnet'}&`+
+      `chainName=${'Mumbai%20Testnet'}&`+
       `rpcUrl=${'https://matic-mumbai.chainstacklabs.com'}&`+
       `blockExplorerUrl=${'https://mumbai.polygonscan.com'}&`+
       `iconUrl=${'https://cryptologos.cc/logos/polygon-matic-logo.png?v=022'}&`+
@@ -199,7 +199,7 @@ async function handler(req, res) {
       logos: [ 'https://cryptologos.cc/logos/avalanche-avax-logo.png?v=022' ],
       addChainLink: `https://metamask.dsolutions.mn/add-chain?`+
       `chainId=${43113}&`+
-      `chainName=${'Avalanche'}&`+
+      `chainName=${'Fuji'}&`+
       `rpcUrl=${'https://api.avax-test.network/ext/bc/C/rpc'}&`+
       `blockExplorerUrl=${'https://testnet.snowtrace.io'}&`+
       `iconUrl=${'https://cryptologos.cc/logos/avalanche-avax-logo.png?v=022'}&`+
@@ -221,7 +221,7 @@ async function handler(req, res) {
       logos: [ 'https://cryptologos.cc/logos/fantom-ftm-logo.png?v=022' ],
       addChainLink: `https://metamask.dsolutions.mn/add-chain?`+
       `chainId=${250}&`+
-      `chainName=${'Fantom Opera'}&`+
+      `chainName=${'Fantom%20Opera'}&`+
       `rpcUrl=${'https://rpcapi.fantom.network/'}&`+
       `blockExplorerUrl=${'https://ftmscan.com/'}&`+
       `iconUrl=${'https://cryptologos.cc/logos/fantom-ftm-logo.png?v=022'}&`+
@@ -243,7 +243,7 @@ async function handler(req, res) {
       logos: [ 'https://cryptologos.cc/logos/fantom-ftm-logo.png?v=022' ],
       addChainLink: `https://metamask.dsolutions.mn/add-chain?`+
       `chainId=${4002}&`+
-      `chainName=${'Fantom Testnet'}&`+
+      `chainName=${'Fantom%20Testnet'}&`+
       `rpcUrl=${'https://rpc.testnet.fantom.network'}&`+
       `blockExplorerUrl=${'https://testnet.ftmscan.com/'}&`+
       `iconUrl=${'https://cryptologos.cc/logos/fantom-ftm-logo.png?v=022'}&`+
@@ -287,7 +287,7 @@ async function handler(req, res) {
       logos: [ 'https://storage.googleapis.com/i06di2x5g7ox05l3e-i06di2x5g7ox/crx-logo.png' ],
       addChainLink: `https://metamask.dsolutions.mn/add-chain?`+
       `chainId=${3305}&`+
-      `chainName=${'Corex Testnet'}&`+
+      `chainName=${'Corex%20Testnet'}&`+
       `rpcUrl=${'https://node-testnet.corexchain.io'}&`+
       `blockExplorerUrl=${'https://explorer-testnet.corexchain.io'}&`+
       `iconUrl=${'https://storage.googleapis.com/i06di2x5g7ox05l3e-i06di2x5g7ox/crx-logo.png'}&`+
