@@ -19,8 +19,19 @@ function runMiddleware(req, res, fn) {
 
 async function handler(req, res) {
   await runMiddleware(req, res, cors)
+  const { chainId } = req.query
 
-  res.status(200).json(chainlist)
+  let foundNetwork = chainlist.find((i) => i.chainId == parseInt(chainId))
+
+  if(chainId == undefined){
+    res.status(400).json({ error: 'chainId query parameter not found' })
+  }
+
+  if(foundNetwork == undefined){
+    res.status(400).json({ error: 'network not found' })
+  }
+
+  res.status(200).json(foundNetwork)
 }
 
 export default handler;
