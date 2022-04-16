@@ -31,17 +31,7 @@ async function handler(req, res) {
       currency: 'ETH',
       explorers: [ 'https://etherscan.io' ],
       logos: [ 'https://cryptologos.cc/logos/ethereum-eth-logo.png?v=022' ],
-      addChainLink: `https://metamask.dsolutions.mn/add-chain?
-        chainId=${3}&
-        chainName=${'Ethereum'}&
-        rpcUrl=${'https://mainnet.infura.io/v3/'}&
-        blockExplorerUrl=${'https://etherscan.io'}&
-        iconUrl=${'https://cryptologos.cc/logos/ethereum-eth-logo.png?v=022'}&
-        currencyName=${'Ethereum'}&
-        currencySymbol=${'ETH'}&
-        currencyDecimals=${18}
-      `,
-    },
+      addChainLink: `https://metamask.dsolutions.mn/add-chain?chainId=${3}&chainName=${'Ethereum'}&rpcUrl=${'https://mainnet.infura.io/v3/'}&blockExplorerUrl=${'https://etherscan.io'}&iconUrl=${'https://cryptologos.cc/logos/ethereum-eth-logo.png?v=022'}&currencyName=${'Ethereum'}&currencySymbol=${'ETH'}&currencyDecimals=${18}`, },
     {
       name: [ 'Ropsten' ,'Ropsten Testnet' ],
       chainId: 3,
@@ -55,16 +45,7 @@ async function handler(req, res) {
       currency: 'ETH',
       explorers: [ 'https://ropsten.etherscan.io' ],
       logos: [ 'https://cryptologos.cc/logos/ethereum-eth-logo.png?v=022' ],
-      addChainLink: `https://metamask.dsolutions.mn/add-chain?
-        chainId=${3}&
-        chainName=${'Ropsten'}&
-        rpcUrl=${'https://ropsten.infura.io/v3/'}&
-        blockExplorerUrl=${'https://ropsten.etherscan.io'}&
-        iconUrl=${'https://cryptologos.cc/logos/ethereum-eth-logo.png?v=022'}&
-        currencyName=${'Ethereum'}&
-        currencySymbol=${'ETH'}&
-        currencyDecimals=${18}
-      `,
+      addChainLink: `https://metamask.dsolutions.mn/add-chain?chainId=${3}&chainName=${'Ropsten'}&rpcUrl=${'https://ropsten.infura.io/v3/'}&blockExplorerUrl=${'https://ropsten.etherscan.io'}&iconUrl=${'https://cryptologos.cc/logos/ethereum-eth-logo.png?v=022'}&currencyName=${'Ethereum'}&currencySymbol=${'ETH'}&currencyDecimals=${18}`,
     },
     {
       name: [ 'Kovan' ,'Kovan Testnet' ],
@@ -81,16 +62,7 @@ async function handler(req, res) {
       currency: 'ETH',
       explorers: [ 'https://kovan.etherscan.io' ],
       logos: [ 'https://cryptologos.cc/logos/ethereum-eth-logo.png?v=022' ],
-      addChainLink: `https://metamask.dsolutions.mn/add-chain?
-        chainId=${42}&
-        chainName=${'Kovan'}&
-        rpcUrl=${'https://ropsten.infura.io/v3/'}&
-        blockExplorerUrl=${'https://kovan.etherscan.io'}&
-        iconUrl=${'https://cryptologos.cc/logos/ethereum-eth-logo.png?v=022'}&
-        currencyName=${'Ethereum'}&
-        currencySymbol=${'ETH'}&
-        currencyDecimals=${18}
-      `,
+      addChainLink: `https://metamask.dsolutions.mn/add-chain?chainId=${42}&chainName=${'Kovan'}&rpcUrl=${'https://ropsten.infura.io/v3/'}&blockExplorerUrl=${'https://kovan.etherscan.io'}&iconUrl=${'https://cryptologos.cc/logos/ethereum-eth-logo.png?v=022'}&currencyName=${'Ethereum'}&currencySymbol=${'ETH'}&currencyDecimals=${18}`,
     },
     {
       name: [ 'Rinkeby' ,'Rinkeby Testnet' ],
@@ -102,16 +74,7 @@ async function handler(req, res) {
       currency: 'ETH',
       explorers: [ 'https://rinkeby.etherscan.io' ],
       logos: [ 'https://cryptologos.cc/logos/ethereum-eth-logo.png?v=022' ],
-      addChainLink: `https://metamask.dsolutions.mn/add-chain?
-        chainId=${4}&
-        chainName=${'Rinkeby'}&
-        rpcUrl=${'https://rinkeby.infura.io/v3/'}&
-        blockExplorerUrl=${'https://rinkeby.etherscan.io'}&
-        iconUrl=${'https://cryptologos.cc/logos/ethereum-eth-logo.png?v=022'}&
-        currencyName=${'Ethereum'}&
-        currencySymbol=${'ETH'}&
-        currencyDecimals=${18}
-      `,
+      addChainLink: `https://metamask.dsolutions.mn/add-chain?chainId=${4}&chainName=${'Rinkeby'}&rpcUrl=${'https://rinkeby.infura.io/v3/'}&blockExplorerUrl=${'https://rinkeby.etherscan.io'}&iconUrl=${'https://cryptologos.cc/logos/ethereum-eth-logo.png?v=022'}&currencyName=${'Ethereum'}&currencySymbol=${'ETH'}&currencyDecimals=${18}`,
     },
     {
       name: [ 'Goerli' ,'Goerli Testnet' ],
@@ -125,16 +88,7 @@ async function handler(req, res) {
       currency: 'ETH',
       explorers: [ 'https://goerli.etherscan.io' ],
       logos: [ 'https://cryptologos.cc/logos/ethereum-eth-logo.png?v=022' ],
-      addChainLink: `https://metamask.dsolutions.mn/add-chain?
-        chainId=${5}&
-        chainName=${'Goerli'}&
-        rpcUrl=${'https://rinkeby.infura.io/v3/'}&
-        blockExplorerUrl=${'https://goerli.etherscan.io'}&
-        iconUrl=${'https://cryptologos.cc/logos/ethereum-eth-logo.png?v=022'}&
-        currencyName=${'Ethereum'}&
-        currencySymbol=${'ETH'}&
-        currencyDecimals=${18}
-      `,
+      addChainLink: `https://metamask.dsolutions.mn/add-chain?chainId=${5}&chainName=${'Goerli'}&rpcUrl=${'https://rinkeby.infura.io/v3/'}&blockExplorerUrl=${'https://goerli.etherscan.io'}&iconUrl=${'https://cryptologos.cc/logos/ethereum-eth-logo.png?v=022'}&currencyName=${'Ethereum'}&currencySymbol=${'ETH'}&currencyDecimals=${18}`,
     },
 
     // BSC
@@ -148,16 +102,7 @@ async function handler(req, res) {
       currency: 'BNB',
       explorers: [ 'https://bscscan.com' ],
       logos: [ 'https://cryptologos.cc/logos/bnb-bnb-logo.png?v=022' ],
-      addChainLink: `https://metamask.dsolutions.mn/add-chain?
-        chainId=${56}&
-        chainName=${'Binance Smart Chain'}&
-        rpcUrl=${'https://bsc-dataseed1.ninicoin.io'}&
-        blockExplorerUrl=${'https://bscscan.com'}&
-        iconUrl=${'https://cryptologos.cc/logos/bnb-bnb-logo.png?v=022'}&
-        currencyName=${'Binance'}&
-        currencySymbol=${'BNB'}&
-        currencyDecimals=${18}
-      `,
+      addChainLink: `https://metamask.dsolutions.mn/add-chain?chainId=${56}&chainName=${'Binance Smart Chain'}&rpcUrl=${'https://bsc-dataseed1.ninicoin.io'}&blockExplorerUrl=${'https://bscscan.com'}&iconUrl=${'https://cryptologos.cc/logos/bnb-bnb-logo.png?v=022'}&currencyName=${'Binance'}&currencySymbol=${'BNB'}&currencyDecimals=${18}`,
     },
     {
       name: [ 'Binance Smart Chain Testnet' ,'BSC Testnet' ],
@@ -171,16 +116,7 @@ async function handler(req, res) {
       currency: 'BNB',
       explorers: [ 'https://testnet.bscscan.com/' ],
       logos: [ 'https://cryptologos.cc/logos/bnb-bnb-logo.png?v=022' ],
-      addChainLink: `https://metamask.dsolutions.mn/add-chain?
-        chainId=${97}&
-        chainName=${'Binance Smart Chain Testnet'}&
-        rpcUrl=${'https://data-seed-prebsc-1-s1.binance.org:8545'}&
-        blockExplorerUrl=${'https://testnet.bscscan.com/'}&
-        iconUrl=${'https://cryptologos.cc/logos/bnb-bnb-logo.png?v=022'}&
-        currencyName=${'Binance'}&
-        currencySymbol=${'BNB'}&
-        currencyDecimals=${18}
-      `,
+      addChainLink: `https://metamask.dsolutions.mn/add-chain?chainId=${97}&chainName=${'Binance Smart Chain Testnet'}&rpcUrl=${'https://data-seed-prebsc-1-s1.binance.org:8545'}&blockExplorerUrl=${'https://testnet.bscscan.com/'}&iconUrl=${'https://cryptologos.cc/logos/bnb-bnb-logo.png?v=022'}&currencyName=${'Binance'}&currencySymbol=${'BNB'}&currencyDecimals=${18}`,
     },
 
     // Polygon
