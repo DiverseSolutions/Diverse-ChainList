@@ -20,9 +20,17 @@ export default function Home() {
           <div className="max-w-lg">
             <h1 className="text-5xl font-bold"><span className="text-blue-600">Diverse</span> Chain List ⛓🔥</h1>
             <p className="py-6 text-xl">Easy API endpoints to retrieve json formatted chain lists of every evm compatible blockchain networks we know 🎉 🥳</p>
-            <Link href="/api/chainlist">
-              <button className="btn btn-primary">Get Chain List</button>
-            </Link>
+            <div className="flex flex-col">
+              <Link href="/api/chainlist">
+                <button className="self-start w-6/12 btn btn-primary">Example Chainlist Endpoint</button>
+              </Link>
+              <Link href="/api/chainId?chainId=3">
+                <button className="self-center w-6/12 my-4 text-white btn btn-warning">Example ChainId Endpoint</button>
+              </Link>
+              <Link href="/api/chainName?chainName=Ropsten">
+                <button className="self-end w-6/12 text-white btn btn-success">Example ChainName Endpoint</button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
