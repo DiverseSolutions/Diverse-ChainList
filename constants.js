@@ -241,7 +241,7 @@ const chainlist = [
       faucets: [],
       currency: 'CRX',
       explorers: [ 'https://explorer.corexchain.io' ],
-      logos: [ 'https://storage.googleapis.com/i06di2x5g7ox05l3e-i06di2x5g7ox/crx-logo.png' ],
+      logos: [ 'https://tokenimg.dsolutions.mn/tokens/crx.png' ],
       addChainLink: `https://metamask.dsolutions.mn/add-chain?`+
       `chainId=${1104}&`+
       `chainName=${'Corex'}&`+
@@ -263,7 +263,7 @@ const chainlist = [
       ],
       currency: 'CRX',
       explorers: [ 'https://explorer-testnet.corexchain.io' ],
-      logos: [ 'https://storage.googleapis.com/i06di2x5g7ox05l3e-i06di2x5g7ox/crx-logo.png' ],
+      logos: [ 'https://tokenimg.dsolutions.mn/tokens/crx.png' ],
       addChainLink: `https://metamask.dsolutions.mn/add-chain?`+
       `chainId=${3305}&`+
       `chainName=${'Corex%20Testnet'}&`+
