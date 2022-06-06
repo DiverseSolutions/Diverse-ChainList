@@ -72,7 +72,7 @@ const chainlist = [
 
     // BSC
     {
-      name: [ 'Binance Smart Chain', 'BSC', 'BSC Mainnet' ],
+      name: [ 'BNB Chain', 'BSC', 'BSC Mainnet' ],
       chainId: 56,
       rpc: [
         'https://bsc-dataseed1.ninicoin.io',
@@ -84,7 +84,7 @@ const chainlist = [
       addChainLink: `https://metamask.dsolutions.mn/add-chain?chainId=${56}&chainName=${'Binance%20Smart%20Chain'}&rpcUrl=${'https://bsc-dataseed1.ninicoin.io'}&blockExplorerUrl=${'https://bscscan.com'}&iconUrl=${'https://cryptologos.cc/logos/bnb-bnb-logo.png?v=022'}&currencyName=${'Binance'}&currencySymbol=${'BNB'}&currencyDecimals=${18}`,
     },
     {
-      name: [ 'Binance Smart Chain Testnet' ,'BSC Testnet' ],
+      name: [ 'BNB Testnet' ,'BSC Testnet' ],
       chainId: 97,
       rpc: [
         'https://data-seed-prebsc-1-s1.binance.org:8545',
