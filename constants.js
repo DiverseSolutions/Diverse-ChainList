@@ -93,7 +93,7 @@ const chainlist = [
         'https://testnet.binance.org/faucet-smart',
       ],
       currency: 'BNB',
-      explorers: [ 'https://testnet.bscscan.com/' ],
+      explorers: [ 'https://testnet.bscscan.com' ],
       logos: [ 'https://cryptologos.cc/logos/bnb-bnb-logo.png?v=022' ],
       addChainLink: `https://metamask.dsolutions.mn/add-chain?chainId=${97}&chainName=${'Binance%20Smart%20Chain%20Testnet'}&rpcUrl=${'https://data-seed-prebsc-1-s1.binance.org:8545'}&blockExplorerUrl=${'https://testnet.bscscan.com/'}&iconUrl=${'https://cryptologos.cc/logos/bnb-bnb-logo.png?v=022'}&currencyName=${'Binance'}&currencySymbol=${'BNB'}&currencyDecimals=${18}`,
     },
@@ -196,7 +196,7 @@ const chainlist = [
       ],
       faucets: [],
       currency: 'FTM',
-      explorers: [ 'https://ftmscan.com/' ],
+      explorers: [ 'https://ftmscan.com' ],
       logos: [ 'https://cryptologos.cc/logos/fantom-ftm-logo.png?v=022' ],
       addChainLink: `https://metamask.dsolutions.mn/add-chain?`+
       `chainId=${250}&`+
@@ -218,7 +218,7 @@ const chainlist = [
         'https://faucet.fantom.network/'
       ],
       currency: 'FTM',
-      explorers: [ 'https://testnet.ftmscan.com/' ],
+      explorers: [ 'https://testnet.ftmscan.com' ],
       logos: [ 'https://cryptologos.cc/logos/fantom-ftm-logo.png?v=022' ],
       addChainLink: `https://metamask.dsolutions.mn/add-chain?`+
       `chainId=${4002}&`+
